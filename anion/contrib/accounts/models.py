@@ -109,7 +109,7 @@ class User(models.Model, AbstractUser):
     is_superuser = models.BooleanField(_("superuser"), default=False)
     groups = models.ManyToManyField(
         Group,
-        related_name="groups",
+        related_name="users",
         verbose_name=Group._meta.verbose_name_plural,
         blank=True,
     )
