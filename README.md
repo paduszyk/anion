@@ -1,6 +1,7 @@
 # ANION
 
 [![](https://img.shields.io/github/pipenv/locked/python-version/paduszyk/anion?logo=python)](https://www.python.org)
+[![](https://img.shields.io/github/pipenv/locked/dependency-version/paduszyk/anion/django/main?logo=django&color=green)](https://github.com/django/django)
 
 [![](https://results.pre-commit.ci/badge/github/paduszyk/anion/main.svg)](https://results.pre-commit.ci/latest/github/paduszyk/anion/main)
 [![](https://img.shields.io/github/actions/workflow/status/paduszyk/anion/ci.yaml?branch=main&logo=github)](https://github.com/paduszyk/anion/blob/main/.github/workflows/ci.yaml)
