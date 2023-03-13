@@ -71,7 +71,7 @@ class User(models.Model, AbstractUser):
 
     # Identifiers and authentication fields
     username = models.CharField(
-        _("name"),
+        _("username"),
         max_length=255,
         unique=True,
         validators=[
