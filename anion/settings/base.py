@@ -10,6 +10,11 @@ BASE_DIR = PROJECT_DIR.parent
 # Apps
 
 INSTALLED_APPS = [
+    "anion.contrib.authentication",
+    "anion.contrib.evaluation",
+    "anion.contrib.output",
+    "anion.contrib.staff",
+    "anion.contrib.units",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
