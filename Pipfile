@@ -6,6 +6,11 @@ name = "pypi"
 [packages]
 
 [dev-packages]
+black = "*"
+flake8 = "*"
+docformatter = "*"
+isort = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.11"
