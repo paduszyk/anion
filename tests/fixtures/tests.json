@@ -1,0 +1,15 @@
+[
+  {
+    "model": "tests.author",
+    "fields": {
+      "full_name": "Herman Melville"
+    }
+  },
+  {
+    "model": "tests.book",
+    "fields": {
+      "title": "Moby Dick",
+      "author": ["Herman Melville"]
+    }
+  }
+]
