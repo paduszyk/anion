@@ -4,13 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+dj-database-url = "*"
+django = ">=4.1"
+pillow = "*"
+psycopg2-binary = "*"
+python-decouple = "*"
+requests = "*"
+tzdata = "*"
 
 [dev-packages]
 black = "*"
 flake8 = "*"
+django-debug-toolbar = "*"
 docformatter = "*"
+ipython = "*"
 isort = "*"
 pre-commit = "*"
+
+[test-packages]
+coverage = "*"
 
 [requires]
 python_version = "3.11"
