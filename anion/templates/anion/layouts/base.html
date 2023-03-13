@@ -1,0 +1,46 @@
+{% load i18n static %}
+
+{% get_current_language as LANG %}
+{% get_current_language_bidi as BIDI %}
+
+<!DOCTYPE html>
+<html lang="{{ LANG|default:'en-us' }}" dir="{{ BIDI|yesno:'rtl,ltr,auto' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block extra-styles %}
+    {% endblock extra-styles %}
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+
+  <body>
+    {% block header %}
+      <header>
+        {% block header-content %}
+        {% endblock header-content %}
+      </header>
+    {% endblock header %}
+
+    {% block main %}
+      <main>
+        <div class="container">
+          {% block main-content %}
+          {% endblock main-content %}
+        </div>
+      </main>
+    {% endblock main %}
+
+    {% block footer %}
+      <footer>
+        <div>
+          {% block footer-content %}
+          {% endblock footer-content %}
+        </div>
+      </footer>
+    {% endblock footer %}
+
+    {% block extra-scripts %}
+    {% endblock extra-scripts %}
+  </body>
+</html>
