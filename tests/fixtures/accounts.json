@@ -1,0 +1,25 @@
+[
+  {
+    "model": "accounts.group",
+    "fields": {
+      "name": "users-who-can-view",
+      "permissions": [
+        ["view_author", "tests", "author"],
+        ["view_book", "tests", "book"]
+      ]
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "username": "active-user",
+      "email": "active-user@anion.tests",
+      "password": "password",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false,
+      "groups": [["users-who-can-view"]],
+      "user_permissions": []
+    }
+  }
+]
