@@ -10,7 +10,7 @@ BASE_DIR = PROJECT_DIR.parent
 # Apps
 
 INSTALLED_APPS = [
-    "anion.contrib.authentication",
+    "anion.contrib.accounts",
     "anion.contrib.evaluation",
     "anion.contrib.output",
     "anion.contrib.staff",
