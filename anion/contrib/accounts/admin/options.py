@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from anion.contrib import admin
 
 from ..models import Group, User
+from .forms import UserAdminChangeForm, UserAdminCreationForm
 
 __all__ = [
     "GroupAdmin",
@@ -31,6 +32,7 @@ class UserAdmin(admin.ModelAdmin, UserAdmin):
     add_fieldsets = [
         (None, {"fields": ["username", "email", "password1", "password2"]})
     ]
+    add_form = UserAdminCreationForm
     fieldsets = [
         (_("Status"), {"fields": ["is_active"]}),
         (_("Identifiers"), {"fields": ["username", "email"]}),
@@ -39,6 +41,7 @@ class UserAdmin(admin.ModelAdmin, UserAdmin):
         (_("Important dates"), {"fields": ["date_joined", "last_login"]}),
     ]
     filter_horizontal = ["groups", "user_permissions"]
+    form = UserAdminChangeForm
     list_display = [
         "username",
         "email",
