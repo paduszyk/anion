@@ -3,6 +3,7 @@
 [![](https://img.shields.io/github/pipenv/locked/python-version/paduszyk/anion?logo=python)](https://www.python.org)
 
 [![](https://results.pre-commit.ci/badge/github/paduszyk/anion/main.svg)](https://results.pre-commit.ci/latest/github/paduszyk/anion/main)
+[![](https://img.shields.io/github/actions/workflow/status/paduszyk/anion/ci.yaml?branch=main&logo=github)](https://github.com/paduszyk/anion/blob/main/.github/workflows/ci.yaml)
 
 [![](https://img.shields.io/badge/linter-flake8-blue)](https://flake8.pycqa.org/)
 [![](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
