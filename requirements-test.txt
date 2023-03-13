@@ -1,0 +1,2 @@
+-i https://pypi.org/simple
+coverage==7.2.1
