@@ -50,3 +50,17 @@ jobs:
       - name: Apply migrations
         run: |
           python manage.py migrate
+      - name: Install test-dependencies
+        run: |
+          pip install -r requirements-test.txt
+      - name: Run tests and get coverage
+        run: |
+          coverage run runtests.py
+          coverage xml -o ./coverage.xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          fail_ci_if_error: false
+          files: ./coverage.xml
+          flags: unittests
+          verbose: true
