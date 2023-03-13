@@ -2,6 +2,8 @@ from functools import partial
 
 from django.contrib import admin
 
+from .forms import AdminAuthenticationForm
+
 __all__ = [
     "AdminSite",
     "register",
@@ -13,6 +15,8 @@ class AdminSite(admin.AdminSite):
     """
     Base class for the default admin site of the project.
     """
+
+    login_form = AdminAuthenticationForm
 
 
 # Default admin site instance
