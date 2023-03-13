@@ -21,5 +21,31 @@
       "groups": [["users-who-can-view"]],
       "user_permissions": []
     }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "username": "inactive-user",
+      "email": "inactive-user@anion.tests",
+      "password": "password",
+      "is_active": false,
+      "is_staff": false,
+      "is_superuser": false,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.user",
+    "fields": {
+      "username": "staff-user",
+      "email": "staff-user@anion.tests",
+      "password": "password",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": false,
+      "groups": [["users-who-can-view"]],
+      "user_permissions": []
+    }
   }
 ]
